@@ -8,7 +8,7 @@ pipeline {
      }
         stage('Clone repo') {
             steps {
-                git url: 'https://github.com/briancowie/MEA-Python', branch: 'master'
+                git url: 'https://github.com/briancowie/MEA-Python', branch: 'main'
             }
         }
         stage('Build and run container'){
