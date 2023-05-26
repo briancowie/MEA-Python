@@ -3,7 +3,7 @@ FROM python:3.6
 # Copy contents into image
 COPY . .
 # Install pip dependencies from requirements
-RUN pip3 install -r requirements.txt
+RUN pip3 install -r requirements.txt --break-sytem-packages
 # Set YOUR_NAME environment variable
 ENV YOUR_NAME=brian
 # Expose the correct port??
