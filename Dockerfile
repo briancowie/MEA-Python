@@ -4,8 +4,9 @@ FROM python:latest
 COPY . .
 # Install pip dependencies from requirements
 RUN pip3 install -r requirements.txt
-# Set YOUR_NAME environment variable
-ENV YOUR_NAME=brian
-# Expose the correct port??
+# Set YOUR_NAME environment variable??
+# ENV YOUR_NAME=brian
+# Expose the correct port
+EXPOSE 5000
 # Create an entrypoint
-ENTRYPOINT ["python3", "app.py"]
+ENTRYPOINT ["python3", "lbg.py.py"]
